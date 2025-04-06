@@ -1,10 +1,13 @@
-import React from 'react';
+import React from "react";
 import SpotlightCard from "../components/SpotlightCard/SpotlightCard";
 import ScrollVelocity from "../components/ScrollVelocity/ScrollVelocity";
+import SkillItem from "../components/SkillItem/skillItem";
+import { Icon } from "@iconify/react/dist/iconify.js";
 
 const WorkSection = () => {
   return (
-    <div className='flex flex-col items-center'>
+    <div className="flex flex-col items-center">
+      
       <div className="w-lvw work-section">
         <SpotlightCard
           className="custom-spotlight-card h-full w-full lg:col-span-7 lg:row-span-2 lg:col-start-2 xl:col-span-4 xl:row-span-3 xl:col-start-3 xl:row-start-1"
@@ -18,9 +21,7 @@ const WorkSection = () => {
             Developed and deployed CRM applications, improving operational
             efficiency by 30%.
           </p>
-          <p className="font-light text-lg w-full text-right">
-            Freelance
-          </p>
+          <p className="font-light text-lg w-full text-right">Freelance</p>
         </SpotlightCard>
 
         <SpotlightCard
@@ -33,9 +34,7 @@ const WorkSection = () => {
             Designed responsive user interfaces, increasing user engagement by
             25%.
           </p>
-          <p className="font-light text-lg w-full text-right">
-            Freelance
-          </p>
+          <p className="font-light text-lg w-full text-right">Freelance</p>
         </SpotlightCard>
 
         <SpotlightCard
@@ -48,9 +47,7 @@ const WorkSection = () => {
             Collaborated on a digital currency broker application, integrating
             real-time data APIs.
           </p>
-          <p className="font-light text-lg w-full text-right">
-            Freelance
-          </p>
+          <p className="font-light text-lg w-full text-right">Freelance</p>
         </SpotlightCard>
 
         <SpotlightCard
@@ -101,7 +98,40 @@ const WorkSection = () => {
         </SpotlightCard>
       </div>
 
-      <div className=' mt-16 md:mt-24 lg:mt-32'>
+      <div className="w-lvw h-[70vh] flex flex-col justify-evenly items-center">
+        <h1 className="text-2xl self-center">SELECTED WORK</h1>
+        <a href="https://everbloom-mt.vercel.app/"
+          className="w-[90vw] md:w-[70vw] text-white translate-x-0 hover:translate-x-5 transition-transform duration-500 ease-in-out"
+          
+        >
+          <h1 className="">E-commerce App</h1>
+          <h1 className="text-2xl md:text-3xl font-bold my-4">EverBloom</h1>
+          
+          <hr className="w-full" />
+        </a>
+        <a href="https://3d-concert-hall.vercel.app/"
+          className="w-[90vw] md:w-[70vw] text-white translate-x-0 hover:translate-x-5 transition-transform duration-500 ease-in-out"
+          
+        >
+          <h1 className="">3D seat selection tool</h1>
+          <h1 className="text-2xl md:text-3xl font-bold my-4">VR seat</h1>
+          
+          <hr className="w-full" />
+        </a>
+        <a href="https://github.com/MTaheridev"
+          className="w-[90vw] md:w-[70vw] text-white translate-x-0 hover:translate-x-5 transition-transform duration-500 ease-in-out"
+          
+        >
+          <h1 className="">for any updates or new projects</h1>
+          <h1 className="text-2xl md:text-3xl font-bold my-4">GitHub</h1>
+          
+          <hr className="w-full" />
+        </a>
+      </div>
+
+      
+
+      <div className=" mt-16 md:mt-24 lg:mt-32">
         <ScrollVelocity
           texts={["keep scrolling", "OR just leave"]}
           velocity={100}
@@ -109,32 +139,30 @@ const WorkSection = () => {
         />
       </div>
 
-      <div className="skills-item">
-        <h1>Web</h1>
-        <img src="./gifs/web.gif" className="h-full rounded-[1vw] mx-4" />
-        <h1>Development</h1>
-      </div>
+      <SkillItem
+        topText="Web"
+        gifSrc="./gifs/web.gif"
+        bottomText="Development"
+      />
 
-      <div className="skills-item">
-        <h1>Interface</h1>
-        <img src="./gifs/ui.gif" className="h-full rounded-[1vw] mx-4" />
-        <h1>Design</h1>
-      </div>
-
-      <div className="skills-item">
-        <h1>Mobile</h1>
-        <img src="./gifs/mobile.gif" className="h-full rounded-[1vw] mx-4" />
-        <h1>Development</h1>
-      </div>
-
-      <div className="skills-item mb-16 md:mb-24 lg:mb-32">
-        <h1>Server-side</h1>
-        <img src="./gifs/server.gif" className="h-full rounded-[1vw] mx-4" />
-        <h1>Apps</h1>
-      </div>
-
+      <SkillItem
+        topText="Interface"
+        gifSrc="./gifs/ui.gif"
+        bottomText="Design"
+      />
+      <SkillItem
+        topText="Mobile"
+        gifSrc="./gifs/mobile.gif"
+        bottomText="Development"
+      />
+      <SkillItem
+        topText="Server-side"
+        gifSrc="./gifs/server.gif"
+        bottomText="Apps"
+        className="mb-16 md:mb-24 lg:mb-32"
+      />
     </div>
-  )
-}
+  );
+};
 
-export default WorkSection
+export default WorkSection;
