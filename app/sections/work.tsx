@@ -118,7 +118,7 @@ const WorkSection = () => {
           
           <hr className="w-full" />
         </a>
-        <a href="https://3d-product-presentor.vercel.app/"
+        <a href="https://3d-product-presenter.vercel.app/"
           className="w-[90vw] md:w-[70vw] text-white translate-x-0 hover:translate-x-5 transition-transform duration-500 ease-in-out"
           
         >
