@@ -127,6 +127,15 @@ const WorkSection = () => {
           
           <hr className="w-full" />
         </a>
+        <a href="https://solo-weather.vercel.app/"
+          className="w-[90vw] md:w-[70vw] text-white translate-x-0 hover:translate-x-5 transition-transform duration-500 ease-in-out"
+          
+        >
+          <h1 className="">just a simple Weather App</h1>
+          <h1 className="text-2xl md:text-3xl font-bold my-4">Solo Weather</h1>
+          
+          <hr className="w-full" />
+        </a>
         <a href="https://github.com/MTaheridev"
           className="w-[90vw] md:w-[70vw] text-white translate-x-0 hover:translate-x-5 transition-transform duration-500 ease-in-out"
           
